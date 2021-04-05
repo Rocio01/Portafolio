@@ -1,4 +1,5 @@
 $white-letter: aliceblue;
+$background-nav: #3E3C3C;
 
 html {
     box-sizing: border-box;
@@ -11,11 +12,7 @@ html {
     margin: 0;
     padding: 0;
   }
-  
-  body {
-    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
-    // background-color: black;
-  }
+ 
 
   li {
     list-style: none;
@@ -26,41 +23,65 @@ html {
     color: $white-letter;
   }
   
-  nav {
-    width: 100%;
-    background: #3E3C3C;
-    color: $white-letter;
+  .navbar {
     display: flex;
-    align-items: center;
-    text-align: center;
+    position: relative;
     justify-content: space-between;
-    padding: 15%;
+    align-items: center;
+    background-color: $background-nav;
+    color: $white-letter
 
-    h5 {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    }
 
-    a {
-        
-        padding-left: 10%;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 20px;
-    }
+}
 
-    ul {
-      display: flex;
-      margin-right: 5%;
-    }
-     li {
-       display: flex;
-       align-items: center;
-       text-align: center;
-     }
-  }
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    color: $white-letter;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: $white-letter;
+    border-radius: 10px;
+}
   
   .introduction {
     background-color: black;
@@ -69,6 +90,8 @@ html {
     display: flex;
     justify-content: space-between;
   }
+
+
 
   .intro {
     padding-top: 10%;
@@ -101,9 +124,49 @@ html {
             
   }
   
- 
-   
   
  
-  
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .background-img {     
+      display: none;   
+            
+  }
+
+
+  .intro-ul {
+    display: none;
+  }
+
+}
 

@@ -12,10 +12,6 @@ html {
   padding: 0;
 }
 
-body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 li {
   list-style: none;
 }
@@ -24,52 +20,75 @@ a {
   color: aliceblue;
 }
 
-nav {
-  width: 100%;
-  background: #3E3C3C;
-  color: aliceblue;
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15%;
-}
-
-nav h5 {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-nav a {
-  padding-left: 10%;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 5%;
-}
-
-nav li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  background-color: #3E3C3C;
+  color: aliceblue;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  color: aliceblue;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: aliceblue;
+  border-radius: 10px;
 }
 
 .introduction {
@@ -116,5 +135,50 @@ nav li {
 
 .background-img {
   width: 40%;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .background-img {
+    display: none;
+  }
+  .intro-ul {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
