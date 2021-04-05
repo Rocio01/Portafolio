@@ -7,12 +7,7 @@ html {
     font-style: normal;
   }
   
-  *, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-  }
- 
+
 
   li {
     list-style: none;
@@ -123,7 +118,9 @@ html {
       width: 40%;   
             
   }
-  
+   .intro-mobile{
+      display: none;
+   }
   
  
   @media (max-width: 768px) {
@@ -166,6 +163,12 @@ html {
 
   .intro-ul {
     display: none;
+  }
+
+  .intro-mobile{
+    display: flex;
+    justify-content: space-evenly;
+    
   }
 
 }

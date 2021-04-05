@@ -5,13 +5,6 @@ html {
   font-style: normal;
 }
 
-*, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
 li {
   list-style: none;
 }
@@ -137,6 +130,10 @@ a {
   width: 40%;
 }
 
+.intro-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navbar {
     -webkit-box-orient: vertical;
@@ -179,6 +176,14 @@ a {
   }
   .intro-ul {
     display: none;
+  }
+  .intro-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 /*# sourceMappingURL=style.css.map */
