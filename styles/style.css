@@ -14,7 +14,14 @@ html {
 
 body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: aliceblue;
 }
 
 nav {
@@ -41,7 +48,6 @@ nav h5 {
 }
 
 nav a {
-  color: aliceblue;
   padding-left: 10%;
   text-decoration: none;
   font-weight: 600;
@@ -57,7 +63,6 @@ nav ul {
 }
 
 nav li {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,8 +72,17 @@ nav li {
   text-align: center;
 }
 
+.introduction {
+  background-color: black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: aliceblue;
+}
+
 .background-img {
-  width: 45%;
+  width: 40%;
   float: right;
+  margin-top: -5%;
 }
 /*# sourceMappingURL=style.css.map */

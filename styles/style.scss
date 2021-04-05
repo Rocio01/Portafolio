@@ -14,7 +14,16 @@ html {
   
   body {
     font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: black;
+    // background-color: black;
+  }
+
+  li {
+    list-style: none;
+    
+  }
+
+  a {
+    color: aliceblue;
   }
   
   nav {
@@ -34,7 +43,7 @@ html {
     }
 
     a {
-        color: aliceblue;
+        
         padding-left: 10%;
         text-decoration: none;
         font-weight: 600;
@@ -47,16 +56,24 @@ html {
       margin-right: 5%;
     }
      li {
-       list-style: none;
        display: flex;
        align-items: center;
        text-align: center;
      }
   }
   
+  .introduction {
+    background-color: black;
+    height: fit-content;
+    color: aliceblue;
+  }
+
   .background-img {
-      width: 45%;
+     
+      width: 40%;
       float: right;
+      margin-top: -5%;
+            
   }
   
  
