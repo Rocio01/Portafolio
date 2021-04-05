@@ -78,11 +78,43 @@ nav li {
   height: -moz-fit-content;
   height: fit-content;
   color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro {
+  padding-top: 10%;
+}
+
+.intro h5 {
+  font-family: "Crete Round";
+  font-size: 72px;
+  line-height: 81px;
+  color: #F55800;
+}
+
+.intro h6 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.intro p, .intro li {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.intro-ul {
+  padding-top: 20%;
 }
 
 .background-img {
   width: 40%;
-  float: right;
-  margin-top: -5%;
 }
 /*# sourceMappingURL=style.css.map */

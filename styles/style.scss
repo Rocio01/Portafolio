@@ -1,4 +1,4 @@
-
+$white-letter: aliceblue;
 
 html {
     box-sizing: border-box;
@@ -23,13 +23,13 @@ html {
   }
 
   a {
-    color: aliceblue;
+    color: $white-letter;
   }
   
   nav {
     width: 100%;
     background: #3E3C3C;
-    color: aliceblue;
+    color: $white-letter;
     display: flex;
     align-items: center;
     text-align: center;
@@ -65,14 +65,39 @@ html {
   .introduction {
     background-color: black;
     height: fit-content;
-    color: aliceblue;
+    color: $white-letter;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .background-img {
-     
-      width: 40%;
-      float: right;
-      margin-top: -5%;
+  .intro {
+    padding-top: 10%;
+
+    h5 {
+    font-family: "Crete Round";  
+    font-size: 72px;
+    line-height: 81px;
+    color: #F55800;
+    }
+    h6 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    }
+    p, li {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 32px;
+    }
+
+
+  }
+.intro-ul {
+  padding-top: 20%;
+}
+  .background-img {     
+      width: 40%;   
             
   }
   
