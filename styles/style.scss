@@ -239,6 +239,7 @@ a {
   }
   .project-image {
     width: 90%;
+    max-width: 768px;
     border: 1rem solid $color-border-dark;
   }
 

@@ -293,6 +293,7 @@ a:hover {
   }
   .project-image {
     width: 90%;
+    max-width: 768px;
     border: 1rem solid #071020;
   }
   .project-text {
