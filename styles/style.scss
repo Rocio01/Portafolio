@@ -7,7 +7,9 @@ html {
     font-style: normal;
   }
   
-
+section {
+  padding: 1rem;
+}
 
   li {
     list-style: none;
@@ -24,8 +26,8 @@ html {
     justify-content: space-between;
     align-items: center;
     background-color: $background-nav;
-    color: $white-letter
-
+    color: $white-letter;
+    padding-left: 1rem;
 
 }
 
@@ -84,6 +86,7 @@ html {
     color: $white-letter;
     display: flex;
     justify-content: space-between;
+    
   }
 
 
@@ -122,6 +125,19 @@ html {
       display: none;
    }
   
+.portafolio {
+  padding: 1rem;
+}
+
+.geom {
+  max-width: 20%;
+  margin-left: 10%;
+}
+.separator{
+  display: flex;
+ align-items: center;
+}
+
  
   @media (max-width: 768px) {
     .navbar {

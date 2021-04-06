@@ -5,6 +5,10 @@ html {
   font-style: normal;
 }
 
+section {
+  padding: 1rem;
+}
+
 li {
   list-style: none;
 }
@@ -26,6 +30,7 @@ a {
           align-items: center;
   background-color: #3E3C3C;
   color: aliceblue;
+  padding-left: 1rem;
 }
 
 .brand-title {
@@ -132,6 +137,24 @@ a {
 
 .intro-mobile {
   display: none;
+}
+
+.portafolio {
+  padding: 1rem;
+}
+
+.geom {
+  max-width: 20%;
+  margin-left: 10%;
+}
+
+.separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 768px) {
