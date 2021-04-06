@@ -19,6 +19,7 @@ li {
 
 a {
 	color: $white-letter;
+  text-decoration: none;
 	&:hover {
 		color: $color-orange;
 	}
@@ -196,6 +197,98 @@ a {
       margin: 0.5%;
     }
   }
+ 
+  a {
+    background-color: $color-orange;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    &:hover {
+      color: $white-letter;
+      border: 1px solid $color-border-dark;
+    }
+  }
+
+}
+.projects {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	margin: 1rem;
+
+}
+.p-image {
+	margin: 1rem;
+}
+.p-image-1 {
+	background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/html-cap.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;	
+}
+
+.p-image-2 {
+	background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/Captura-telegram.PNG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;	
+}
+
+.p-image-3 {
+	background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/Captura-telegram.PNG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;	
+}
+
+.p-text {
+    padding-top: 5rem;
+	margin: 1rem;
+	color: $white-letter;
+	h3{
+		font-family: "Crete Round";
+		
+		font-size: 32px;
+		line-height: 44px;
+	}
+
+	p {
+		font-family: Inter;
+		font-size: 17px;
+		line-height: 24px;
+		
+	}
+
+	ul {
+		display: flex;
+	}
+
+	li {
+		font-family: Inter;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+
+	}
+
+	h4 {
+		display: none;
+
+		
+	}
+
+	&:hover {
+		h4 {
+			display: flex;
+			justify-content: center;
+			background-color: $color-orange;
+		}
+
+		
+
+	}
 }
 
 @media (max-width: 768px) {
@@ -246,4 +339,12 @@ a {
   .project-text {
     width: 90%;
   }
+
+  .projects {
+	display: grid;
+	grid-template-columns: 80%;
+
+}
+
+
 }

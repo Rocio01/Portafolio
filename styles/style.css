@@ -17,6 +17,7 @@ li {
 
 a {
   color: aliceblue;
+  text-decoration: none;
 }
 
 a:hover {
@@ -234,6 +235,99 @@ a:hover {
   margin: 0.5%;
 }
 
+.project-text a {
+  background-color: #F55800;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.project-text a:hover {
+  color: aliceblue;
+  border: 1px solid #071020;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  margin: 1rem;
+}
+
+.p-image {
+  margin: 1rem;
+}
+
+.p-image-1 {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/html-cap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-image-2 {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/Captura-telegram.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-image-3 {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/Captura-telegram.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-text {
+  padding-top: 5rem;
+  margin: 1rem;
+  color: aliceblue;
+}
+
+.p-text h3 {
+  font-family: "Crete Round";
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.p-text p {
+  font-family: Inter;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.p-text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-text li {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.p-text h4 {
+  display: none;
+}
+
+.p-text:hover h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F55800;
+}
+
 @media (max-width: 768px) {
   .navbar {
     -webkit-box-orient: vertical;
@@ -298,6 +392,12 @@ a:hover {
   }
   .project-text {
     width: 90%;
+  }
+  .projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
