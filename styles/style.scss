@@ -1,12 +1,14 @@
 $white-letter: aliceblue;
 $background-nav: #3E3C3C;
 $color-orange : #F55800;
+$color-border-dark: #071020;
 html {
 	box-sizing: border-box;
-	font-family: Inter, Roboto, sans-serif;
-	font-style: normal;
 }
 
+body {
+  font-family: Inter, Roboto, sans-serif;
+}
 section {
 	padding: 1rem;
 }
@@ -136,11 +138,64 @@ a {
 	display: flex;
 	align-items: center;
 	h2 {
-		font-family: Crete Round;
+		font-family: "Crete Round";
 		font-weight: normal;
 		font-size: 40px;
 		line-height: 52px;
 	}
+}
+
+.principal-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.project-image {
+  width: 60%;
+ border: 3rem solid $color-border-dark;
+  
+
+  img{
+ 
+    width: 99.99%;
+  }
+}
+
+.project-text{
+  width: 30%;
+  padding: 1rem;
+
+  h3 {
+  font-family: "Crete Round";
+  font-size: 40px;
+  line-height: 52px;
+  color: #091E42;
+  }
+  p{
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #091E42;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091E42;
+
+    li{
+      border: 1px solid $color-border-dark;
+      padding: 1%;
+      margin: 0.5%;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -178,4 +233,16 @@ a {
 		display: flex;
 		justify-content: space-evenly;
 	}
+  .principal-project {
+    flex-direction: column;
+
+  }
+  .project-image {
+    width: 90%;
+    border: 1rem solid $color-border-dark;
+  }
+
+  .project-text {
+    width: 90%;
+  }
 }

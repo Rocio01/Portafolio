@@ -1,8 +1,10 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
   font-family: Inter, Roboto, sans-serif;
-  font-style: normal;
 }
 
 section {
@@ -163,10 +165,73 @@ a:hover {
 }
 
 .separator h2 {
-  font-family: Crete Round;
+  font-family: "Crete Round";
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
+}
+
+.principal-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.project-image {
+  width: 60%;
+  border: 3rem solid #071020;
+}
+
+.project-image img {
+  width: 99.99%;
+}
+
+.project-text {
+  width: 30%;
+  padding: 1rem;
+}
+
+.project-text h3 {
+  font-family: "Crete Round";
+  font-size: 40px;
+  line-height: 52px;
+  color: #091E42;
+}
+
+.project-text p {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #091E42;
+}
+
+.project-text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091E42;
+}
+
+.project-text ul li {
+  border: 1px solid #071020;
+  padding: 1%;
+  margin: 0.5%;
 }
 
 @media (max-width: 768px) {
@@ -219,6 +284,19 @@ a:hover {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .principal-project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-image {
+    width: 90%;
+    border: 1rem solid #071020;
+  }
+  .project-text {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
