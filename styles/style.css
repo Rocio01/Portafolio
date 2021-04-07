@@ -68,11 +68,99 @@ a:hover {
   list-style: none;
 }
 
+.project-text a {
+  background-color: #f55800;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
 .navbar-links li a {
   display: block;
   text-decoration: none;
   color: white;
   padding: 1rem;
+}
+
+.project-text a:hover {
+  color: aliceblue;
+  border: 1px solid #071020;
+}
+
+.intro {
+  padding-top: 10%;
+}
+
+.intro h5 {
+  font-family: "Crete Round", Inter, Roboto, sans-serif;
+  font-size: 72px;
+  line-height: 81px;
+  color: #f55800;
+}
+
+.intro h6 {
+  font-family: Inter, Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.intro p,
+.intro li {
+  font-family: Inter, Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.p-text {
+  padding-top: 5rem;
+  margin: 1rem;
+  color: aliceblue;
+}
+
+.p-text h3 {
+  font-family: "Crete Round", Inter, Roboto, sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.p-text p {
+  font-family: Inter, Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.p-text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0;
+}
+
+.p-text li {
+  font-family: Inter, Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #3e3c3c;
+  padding: 5%;
+  margin: 0.5%;
+}
+
+.p-text h4 {
+  display: none;
+}
+
+.project-text ul li {
+  border: 1px solid #071020;
+  padding: 1%;
+  margin: 0.5%;
 }
 
 .navbar-links li:hover {
@@ -115,31 +203,6 @@ a:hover {
           justify-content: space-between;
 }
 
-.intro {
-  padding-top: 10%;
-}
-
-.intro h5 {
-  font-family: "Crete Round", Inter, Roboto, sans-serif;
-  font-size: 72px;
-  line-height: 81px;
-  color: #f55800;
-}
-
-.intro h6 {
-  font-family: Inter, Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.intro p,
-.intro li {
-  font-family: Inter;
-  font-size: 20px;
-  line-height: 32px;
-}
-
 .intro-ul {
   padding-top: 20%;
 }
@@ -154,9 +217,6 @@ a:hover {
 
 .portafolio {
   padding: 1rem;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
   margin: auto;
 }
 
@@ -175,7 +235,7 @@ a:hover {
 }
 
 .separator h2 {
-  font-family: "Crete Round";
+  font-family: "Crete Round", Inter, Roboto, sans-serif;
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
@@ -209,14 +269,14 @@ a:hover {
 }
 
 .project-text h3 {
-  font-family: "Crete Round";
+  font-family: "Crete Round", Inter, Roboto, sans-serif;
   font-size: 40px;
   line-height: 52px;
   color: #091e42;
 }
 
 .project-text p {
-  font-family: Inter;
+  font-family: Inter, Roboto, sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
@@ -231,31 +291,11 @@ a:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-left: 0;
-  font-family: Inter;
+  font-family: Inter, Roboto, sans-serif;
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
-}
-
-.project-text ul li {
-  border: 1px solid #071020;
-  padding: 1%;
-  margin: 0.5%;
-}
-
-.project-text a {
-  background-color: #f55800;
-  padding: 2%;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
-.project-text a:hover {
-  color: aliceblue;
-  border: 1px solid #071020;
 }
 
 .projects {
@@ -267,9 +307,6 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 2rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .p-image {
@@ -296,7 +333,7 @@ a:hover {
           justify-content: center;
   background-color: #f55800;
   margin-top: 85%;
-  font-family: Inter;
+  font-family: Inter, Roboto, sans-serif;
   padding: 0.5rem;
   font-weight: bold;
   font-size: 17px;
@@ -328,49 +365,6 @@ a:hover {
   background-position: bottom;
 }
 
-.p-text {
-  padding-top: 5rem;
-  margin: 1rem;
-  color: aliceblue;
-}
-
-.p-text h3 {
-  font-family: "Crete Round";
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.p-text p {
-  font-family: Inter;
-  font-size: 17px;
-  line-height: 24px;
-}
-
-.p-text ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 0;
-}
-
-.p-text li {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  background-color: #3e3c3c;
-  padding: 5%;
-  margin: 0.5%;
-}
-
-.p-text h4 {
-  display: none;
-}
-
 .p-image-1:hover {
   background-image: url(../images/html-cap.png);
   background-repeat: no-repeat;
@@ -390,6 +384,27 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+}
+
+.frameworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
+}
+
+.frameworks li {
+  font-family: Inter;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+.frameworks h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .about-section {
@@ -466,9 +481,6 @@ a:hover {
     display: grid;
     -ms-grid-columns: 90%;
         grid-template-columns: 90%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     margin: 0;
   }
   .p-image {
@@ -491,6 +503,12 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+  }
+  .frameworks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
