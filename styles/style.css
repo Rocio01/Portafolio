@@ -265,6 +265,28 @@ a:hover {
   margin: 1rem;
 }
 
+.p-image:hover {
+  border: 0.5rem solid #071020;
+}
+
+.p-image:hover h3, .p-image:hover p, .p-image:hover ul {
+  display: none;
+}
+
+.p-image:hover h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F55800;
+}
+
+.p-image:hover h4 a:hover {
+  color: aliceblue;
+}
+
 .p-image-1 {
   background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/html-cap.png);
   background-repeat: no-repeat;
@@ -320,7 +342,7 @@ a:hover {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  border: 1px solid #071020;
+  background-color: #3E3C3C;
   padding: 1%;
   margin: 0.5%;
 }
@@ -329,14 +351,25 @@ a:hover {
   display: none;
 }
 
-.p-text:hover h4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #F55800;
+.p-image-1:hover {
+  background-image: url(../images/html-cap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-image-2:hover {
+  background-image: url(../images/Captura-telegram.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-image-3:hover {
+  background-image: url(../images/app_screenshot.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 @media (max-width: 768px) {
