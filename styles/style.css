@@ -254,7 +254,11 @@ a:hover {
   display: grid;
   -ms-grid-columns: 30% 30% 30%;
       grid-template-columns: 30% 30% 30%;
-  margin: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem;
+  height: 450px;
 }
 
 .p-image {
@@ -276,7 +280,7 @@ a:hover {
 }
 
 .p-image-3 {
-  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/Captura-telegram.PNG);
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/app_screenshot.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -304,6 +308,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0;
 }
 
 .p-text li {
@@ -312,6 +320,9 @@ a:hover {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  border: 1px solid #071020;
+  padding: 1%;
+  margin: 0.5%;
 }
 
 .p-text h4 {
@@ -398,6 +409,7 @@ a:hover {
     display: grid;
     -ms-grid-columns: 80%;
         grid-template-columns: 80%;
+    height: 450px;
   }
 }
 /*# sourceMappingURL=style.css.map */
