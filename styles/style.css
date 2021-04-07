@@ -446,5 +446,23 @@ a:hover {
     height: 450px;
     margin: 0;
   }
+  .p-image-1:hover {
+    background-image: url(../images/html-cap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .p-image-2:hover {
+    background-image: url(../images/Captura-telegram.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .p-image-3:hover {
+    background-image: url(../images/app_screenshot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
 }
 /*# sourceMappingURL=style.css.map */
