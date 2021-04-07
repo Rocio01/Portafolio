@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-  color: #F55800;
+  color: #f55800;
 }
 
 .navbar {
@@ -42,14 +42,14 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #3E3C3C;
+  background-color: #3e3c3c;
   color: aliceblue;
   padding-left: 1rem;
 }
 
 .brand-title {
   font-size: 1.5rem;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .navbar-links {
@@ -81,7 +81,7 @@ a:hover {
 
 .toggle-button {
   position: absolute;
-  top: .75rem;
+  top: 0.75rem;
   right: 1rem;
   display: none;
   -webkit-box-orient: vertical;
@@ -103,11 +103,9 @@ a:hover {
   border-radius: 10px;
 }
 
-.introduction, .about {
+.introduction,
+.about {
   background-color: black;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,14 +120,14 @@ a:hover {
 }
 
 .intro h5 {
-  font-family: "Crete Round";
+  font-family: "Crete Round", Inter, Roboto, sans-serif;
   font-size: 72px;
   line-height: 81px;
-  color: #F55800;
+  color: #f55800;
 }
 
 .intro h6 {
-  font-family: Inter;
+  font-family: Inter, Roboto, sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
@@ -214,7 +212,7 @@ a:hover {
   font-family: "Crete Round";
   font-size: 40px;
   line-height: 52px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project-text p {
@@ -222,7 +220,7 @@ a:hover {
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project-text ul {
@@ -237,7 +235,7 @@ a:hover {
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .project-text ul li {
@@ -247,7 +245,7 @@ a:hover {
 }
 
 .project-text a {
-  background-color: #F55800;
+  background-color: #f55800;
   padding: 2%;
   font-weight: bold;
   font-size: 17px;
@@ -283,7 +281,9 @@ a:hover {
   border: 0.5rem solid #071020;
 }
 
-.p-image:hover h3, .p-image:hover p, .p-image:hover ul {
+.p-image:hover h3,
+.p-image:hover p,
+.p-image:hover ul {
   display: none;
 }
 
@@ -294,7 +294,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #F55800;
+  background-color: #f55800;
   margin-top: 85%;
   font-family: Inter;
   padding: 0.5rem;
@@ -362,7 +362,7 @@ a:hover {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  background-color: #3E3C3C;
+  background-color: #3e3c3c;
   padding: 5%;
   margin: 0.5%;
 }
@@ -426,7 +426,7 @@ a:hover {
     text-align: center;
   }
   .navbar-links ul li a {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
   .navbar-links.active {
     display: -webkit-box;
@@ -472,7 +472,7 @@ a:hover {
     margin: 0;
   }
   .p-image {
-    height: 450px;
+    height: 350px;
   }
   .p-image-1:hover {
     background-image: url(../images/html-cap.png);
