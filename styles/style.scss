@@ -235,6 +235,7 @@ a {
 			display: flex;
 			justify-content: center;
 			background-color: $color-orange;
+			margin-top: 85%;
 			a:hover {
 				color: $white-letter;
 			}
@@ -376,13 +377,14 @@ a {
   }
 
   .project-text {
-    width: 90%;
+    width: 95%;
   }
 
   .projects {
 	display: grid;
-	grid-template-columns: 80%;
+	grid-template-columns: 90%;
 	height: 450px;
+	margin: 0;
 }
 
 

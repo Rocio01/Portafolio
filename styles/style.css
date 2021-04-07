@@ -281,6 +281,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #F55800;
+  margin-top: 85%;
 }
 
 .p-image:hover h4 a:hover {
@@ -435,14 +436,15 @@ a:hover {
     border: 1rem solid #071020;
   }
   .project-text {
-    width: 90%;
+    width: 95%;
   }
   .projects {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 80%;
-        grid-template-columns: 80%;
+    -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
     height: 450px;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
