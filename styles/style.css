@@ -282,6 +282,11 @@ a:hover {
           justify-content: center;
   background-color: #F55800;
   margin-top: 85%;
+  font-family: Inter;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .p-image:hover h4 a:hover {

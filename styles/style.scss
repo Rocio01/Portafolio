@@ -236,6 +236,11 @@ a {
 			justify-content: center;
 			background-color: $color-orange;
 			margin-top: 85%;
+			font-family: Inter;
+			padding: 0.5rem;
+			font-weight: bold;
+			font-size: 17px;
+			line-height: 24px;
 			a:hover {
 				color: $white-letter;
 			}
