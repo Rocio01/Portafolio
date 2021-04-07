@@ -8,6 +8,8 @@ html {
 
 body {
   font-family: Inter, Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 section {
 	padding: 1rem;
@@ -84,7 +86,7 @@ a {
 	border-radius: 10px;
 }
 
-.introduction {
+.introduction, .about {
 	background-color: black;
 	height: fit-content;
 	color: $white-letter;
@@ -128,6 +130,8 @@ a {
 
 .portafolio {
 	padding: 1rem;
+	min-height: fit-content;
+	margin: auto;
 }
 
 .geom {
@@ -217,14 +221,14 @@ a {
 	grid-template-columns: 30% 30% 30%;
 	justify-content: space-between;
 	margin: 2rem;
-	height: 450px;
+	height: fit-content;
 
 	
 
 }
 .p-image {
 	margin: 1rem;
-
+	height: 450px;
 	&:hover{
 		h3, p, ul {
 			display: none;
@@ -333,7 +337,9 @@ a {
 	background-position: bottom;	
 }
 
-
+.about-section {
+	padding-left: 3rem;
+}
 
 
 @media (max-width: 768px) {
@@ -388,11 +394,13 @@ a {
   .projects {
 	display: grid;
 	grid-template-columns: 90%;
-	height: 450px;
+	height: fit-content;
 	margin: 0;
 }
 
-
+.p-image{
+	height: 450px;
+}
 .p-image-1:hover {
 	background-image: url(../images/html-cap.png);
 	background-repeat: no-repeat;

@@ -5,6 +5,13 @@ html {
 
 body {
   font-family: Inter, Roboto, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 section {
@@ -96,7 +103,7 @@ a:hover {
   border-radius: 10px;
 }
 
-.introduction {
+.introduction, .about {
   background-color: black;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -149,6 +156,10 @@ a:hover {
 
 .portafolio {
   padding: 1rem;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  margin: auto;
 }
 
 .geom {
@@ -258,11 +269,14 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 2rem;
-  height: 450px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .p-image {
   margin: 1rem;
+  height: 450px;
 }
 
 .p-image:hover {
@@ -378,6 +392,10 @@ a:hover {
   background-position: bottom;
 }
 
+.about-section {
+  padding-left: 3rem;
+}
+
 @media (max-width: 768px) {
   .navbar {
     -webkit-box-orient: vertical;
@@ -448,8 +466,13 @@ a:hover {
     display: grid;
     -ms-grid-columns: 90%;
         grid-template-columns: 90%;
-    height: 450px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     margin: 0;
+  }
+  .p-image {
+    height: 450px;
   }
   .p-image-1:hover {
     background-image: url(../images/html-cap.png);
