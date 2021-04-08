@@ -106,7 +106,7 @@ a {
 }
 
 .p-text {
-  padding-top: 5rem;
+  padding-top: 4rem;
   margin: 1rem;
   color: $white-letter;
 
@@ -124,6 +124,7 @@ a {
 
   ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-left: 0;
   }
@@ -135,8 +136,9 @@ a {
     font-size: 15px;
     line-height: 20px;
     background-color: $background-nav;
-    padding: 5%;
+    padding: 1%;
     margin: 0.5%;
+    width: fit-content;
   }
 
   h4 {
@@ -288,10 +290,10 @@ a {
       background-color: $color-orange;
       margin-top: 85%;
       font-family: Inter, Roboto, sans-serif;
-      padding: 0.5rem;
       font-weight: bold;
       font-size: 17px;
       line-height: 24px;
+      padding: 0.5rem;
 
       a:hover {
         color: $white-letter;
@@ -343,26 +345,60 @@ a {
 }
 
 .frameworks {
-	display: flex;
-	padding-top: 2rem;
+  display: flex;
+  padding-top: 2rem;
 
-	li{
-	font-family: Inter;
+  li {
+    font-family: Inter;
     font-size: 22px;
     line-height: 43px;
-	}
+  }
 
-	h4 {
-	font-family: Inter;
+  h4 {
+    font-family: Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
-	}
+  }
 }
 
 .about-section {
   padding-left: 3rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/geom-search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+
+  p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    width: 50%;
+    padding: 1rem;
+  }
+}
+
+.contact-links {
+  display: flex;
+
+  li {
+    font-size: 60px;
+  }
+
+  a {
+    color: $color-border-dark;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -456,6 +492,6 @@ a {
   }
 
   .frameworks {
-	  flex-direction: column;
+    flex-direction: column;
   }
 }
