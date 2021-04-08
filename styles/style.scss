@@ -1,0 +1,496 @@
+$white-letter: aliceblue;
+$background-nav: #3e3c3c;
+$color-orange : #f55800;
+$color-border-dark: #071020;
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: $white-letter;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-orange;
+  }
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-nav;
+  color: $white-letter;
+  padding-left: 1rem;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.project-text a {
+  background-color: $color-orange;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.contact-links {
+  display: flex;
+
+  li {
+    font-size: 60px;
+  }
+
+  a {
+    color: $color-border-dark;
+    padding: 1rem;
+  }
+}
+
+.frameworks {
+  display: flex;
+  padding-top: 2rem;
+
+  li {
+    font-family: Inter, Roboto, sans-serif;
+    font-size: 22px;
+    line-height: 43px;
+  }
+
+  h4 {
+    font-family: Inter, Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.project-text a:hover {
+  color: $white-letter;
+  border: 1px solid $color-border-dark;
+}
+
+.intro {
+  padding-top: 10%;
+
+  h5 {
+    font-family: "Crete Round", Inter, Roboto, sans-serif;
+    font-size: 72px;
+    line-height: 81px;
+    color: $color-orange;
+  }
+
+  h6 {
+    font-family: Inter, Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  p,
+  li {
+    font-family: Inter, Roboto, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.p-text {
+  padding-top: 4rem;
+  margin: 1rem;
+  color: $white-letter;
+
+  h3 {
+    font-family: "Crete Round", Inter, Roboto, sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  p {
+    font-family: Inter, Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  li {
+    font-family: Inter, Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    background-color: $background-nav;
+    padding: 1%;
+    margin: 0.5%;
+    width: fit-content;
+  }
+
+  h4 {
+    display: none;
+  }
+}
+
+.project-text ul li {
+  border: 1px solid $color-border-dark;
+  padding: 1%;
+  margin: 0.5%;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  color: $white-letter;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: $white-letter;
+  border-radius: 10px;
+}
+
+.introduction,
+.about {
+  background-color: black;
+  color: $white-letter;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-ul {
+  padding-top: 20%;
+}
+
+.background-img {
+  width: 40%;
+}
+
+.intro-mobile {
+  display: none;
+}
+
+.portafolio {
+  padding: 1rem;
+  margin: auto;
+}
+
+.geom {
+  max-width: 20%;
+  margin-left: 10%;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-family: "Crete Round", Inter, Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+.principal-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.project-image {
+  width: 60%;
+  border: 3rem solid $color-border-dark;
+
+  img {
+    width: 99.99%;
+  }
+}
+
+.project-text {
+  width: 30%;
+  padding: 1rem;
+
+  h3 {
+    font-family: "Crete Round", Inter, Roboto, sans-serif;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  p {
+    font-family: Inter, Roboto, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #091e42;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+    font-family: Inter, Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091e42;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/geom-search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  p {
+    font-family: Inter, Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    width: 50%;
+    padding: 1rem;
+  }
+}
+
+.p-image {
+  margin: 1rem;
+  height: 450px;
+
+  &:hover {
+    h3,
+    p,
+    ul {
+      display: none;
+    }
+
+    border: 0.5rem solid $color-border-dark;
+
+    h4 {
+      display: flex;
+      justify-content: center;
+      background-color: $color-orange;
+      margin-top: 85%;
+      font-family: Inter, Roboto, sans-serif;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 24px;
+      padding: 0.5rem;
+
+      a:hover {
+        color: $white-letter;
+      }
+    }
+  }
+}
+
+.p-image-1 {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/html-cap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-image-2 {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/Captura-telegram.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-image-3 {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../images/app_screenshot.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-image-1:hover {
+  background-image: url(../images/html-cap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-image-2:hover {
+  background-image: url(../images/Captura-telegram.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.p-image-3:hover {
+  background-image: url(../images/app_screenshot.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.about-section {
+  padding-left: 3rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .background-img {
+    display: none;
+  }
+
+  .intro-ul {
+    display: none;
+  }
+
+  .intro-mobile {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .principal-project {
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 90%;
+    max-width: 768px;
+    border: 1rem solid $color-border-dark;
+  }
+
+  .project-text {
+    width: 95%;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 90%;
+    margin: 0;
+  }
+
+  .p-image {
+    height: 350px;
+  }
+
+  .p-image-1:hover {
+    background-image: url(../images/html-cap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .p-image-2:hover {
+    background-image: url(../images/Captura-telegram.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .p-image-3:hover {
+    background-image: url(../images/app_screenshot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .frameworks {
+    flex-direction: column;
+  }
+}
