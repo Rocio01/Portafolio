@@ -77,6 +77,42 @@ a:hover {
   letter-spacing: 0.03em;
 }
 
+.contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-links li {
+  font-size: 60px;
+}
+
+.contact-links a {
+  color: #071020;
+  padding: 1rem;
+}
+
+.frameworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
+}
+
+.frameworks li {
+  font-family: Inter, Roboto, sans-serif;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+.frameworks h4 {
+  font-family: Inter, Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 .navbar-links li a {
   display: block;
   text-decoration: none;
@@ -316,6 +352,32 @@ a:hover {
   margin: 2rem;
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(../images/geom-search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.contact p {
+  font-family: Inter, Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+  width: 50%;
+  padding: 1rem;
+}
+
 .p-image {
   margin: 1rem;
   height: 450px;
@@ -393,70 +455,8 @@ a:hover {
   background-position: bottom;
 }
 
-.frameworks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 2rem;
-}
-
-.frameworks li {
-  font-family: Inter;
-  font-size: 22px;
-  line-height: 43px;
-}
-
-.frameworks h4 {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-}
-
 .about-section {
   padding-left: 3rem;
-}
-
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url(../images/geom-search.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.contact p {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bolder;
-  font-size: 20px;
-  color: black;
-  width: 50%;
-  padding: 1rem;
-}
-
-.contact-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contact-links li {
-  font-size: 60px;
-}
-
-.contact-links a {
-  color: #071020;
-  padding: 1rem;
 }
 
 @media (max-width: 768px) {
